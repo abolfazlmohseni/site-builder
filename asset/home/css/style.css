@@ -1,9 +1,18 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #e1e8eb;
+    /* background-color: #e1e8eb; */
 }
 
+.Loader{
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .Container {
     max-width: 1280px;
     margin-left: auto;
@@ -16,6 +25,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #e1e8eb;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 12px #00000020,-1px -1px 12px #00000020;
 }
 
 nav {}
@@ -42,17 +55,22 @@ nav {}
 
 .Navbar-Items {}
 
-.Navbar-Items__text {}
+.Navbar-Items__text {
+    color: #000;
+    text-decoration: none;
+}
 
 .theme {
     width: 48px;
     height: 48px;
     border-radius: 24px;
-    background-color: #7952b3;
+    background-color: #343a40;
     display: flex;
         align-items: center;
         justify-content: center;
         font-size: 2rem;
+    box-shadow: 1px 1px 4px #00000020,-1px -1px 4px #00000020;
+
 }
 
 .Active {
@@ -63,11 +81,9 @@ nav {}
 .dark,
 .Light {
     display: none;
+    color: #fff;
 }
 
-.bi {
-    color: #ffc107;
-}
 
 .bi-moon {}
 
@@ -77,9 +93,22 @@ nav {}
 
 .Leftside {}
 
-.LoginSinup {}
+.LoginSinup {
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #7952b3;
+    color: #000;
+    display: flex
+;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
 
-.LoginSinup__Icon {}
+.LoginSinup__Icon {
+    font-size: 20px;
+}
 
 .bi-person {}
 

@@ -9,7 +9,7 @@ body {
 /* dark Mode */
 
 .darkB {
-    background-color: #343a40;
+    background-color: rgb(17 24 39);
     color: #fff !important;
     transition: 0.3s all ease;
 }
@@ -403,8 +403,8 @@ body {
 
 
 
-.darkB .Navbar-Container {
-    background-color: #343a40;
+.darkB .Navbar-Container,.darkB .Advantage-Box__items {
+    background-color: rgb(36 42 56);
 }
 .darkB .Navbar-Items__text {
     color: #fff;

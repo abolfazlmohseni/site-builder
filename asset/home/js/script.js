@@ -18,54 +18,33 @@ themeBTN.addEventListener("click", function () {
     }
 })
 // theme Website End !
-// slider prodact
-let i = 0
-prodactElem = $.querySelectorAll(".sectionTree-layers__items")
-setInterval(function () {
-    if (i == 0) {
-        prodactElem[i].classList = "sectionTree-layers__items layers-active"
-        prodactElem[i + 1].classList = "sectionTree-layers__items layers-left"
-        prodactElem[i + 2].classList = "sectionTree-layers__items layers-right"
+// highlightLayer
 
-    } else if (i < 9) {
-        prodactElem[i].classList = "sectionTree-layers__items layers-active"
-        prodactElem[i + 1].classList = "sectionTree-layers__items layers-left"
-        prodactElem[i + 2].classList = "sectionTree-layers__items layers-right"
+const layers = {
+    right: document.querySelector('.layers-right'),
+    active: document.querySelector('.layers-active'),
+    left: document.querySelector('.layers-left')
+};
 
-        prodactElem[i - 1].classList = "sectionTree-layers__items layers-active"
-        prodactElem[i - 2].classList = "sectionTree-layers__items layers-left"
-        prodactElem[i - 3].classList = "sectionTree-layers__items layers-right"
-        console.log("salam")
-    } else if (i < 10) {
-        prodactElem[i].classList = "sectionTree-layers__items layers-active"
-        prodactElem[i + 1].classList = "sectionTree-layers__items layers-left"
-        prodactElem[i - 1].classList = "sectionTree-layers__items layers-right"
-        console.log("salam")
-
-        prodactElem[i - 1].classList = "sectionTree-layers__items layers-active"
-        prodactElem[i - 2].classList = "sectionTree-layers__items layers-left"
-        prodactElem[i - 3].classList = "sectionTree-layers__items layers-right"
-    } else if (i == 10) {
-        prodactElem[i].classList = "sectionTree-layers__items layers-active"
-        prodactElem[i - 1].classList = "sectionTree-layers__items layers-left"
-        prodactElem[i - 2].classList = "sectionTree-layers__items layers-right"
-        console.log("salam")
-
-        prodactElem[i - 1].classList = "sectionTree-layers__items layers-active"
-        prodactElem[i - 3].classList = "sectionTree-layers__items layers-left"
-        prodactElem[i - 4].classList = "sectionTree-layers__items layers-right"
-    } else {
-        i = 0
-        console.log("reset time")
+const resetStyles = () => {
+    for (let key in layers) {
+        layers[key].style.transform = 'scale(0.80)';
+        layers[key].style.filter = 'blur(3px)';
     }
-    i++
-}, 2000)
+};
+
+const highlightLayer = (target) => {
+    resetStyles();
+    target.style.transform = 'scale(1)';
+    target.style.filter = 'blur(0px)';
+};
+
+layers.right.addEventListener('mouseenter', () => highlightLayer(layers.right));
+layers.active.addEventListener('mouseenter', () => highlightLayer(layers.active));
+layers.left.addEventListener('mouseenter', () => highlightLayer(layers.left));
 
 
-
-
-
-// slider prodact End !
+// highlightLayer End !
 
 //Loader Website!
 // const LoaderElem = document.querySelector(".Loader")

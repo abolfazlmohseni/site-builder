@@ -391,6 +391,28 @@ body {
     margin-top: 4rem;
 }
 
+.sectionTree-bestLayers {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    /* justify-content: ; */
+}
+
+.sectionTree-bestLayers__row {
+    width: 42%;
+    height: 5px;
+    background-color: #ffc110;
+    border-radius: 10px;
+}
+
+.sectionTree-bestLayers__text {
+    width: 16%;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
 .sectionTree-layers {
     display: flex;
     flex-wrap: nowrap;
@@ -401,24 +423,16 @@ body {
 }
 
 .sectionTree-layers__items {
-    display: none;
     width: 290px;
     height: 450px;
     padding: 5px;
     border-radius: 8px;
     box-shadow: 1px 1px 6px #00000045, -1px -1px 6px #00000045;
+    transition: all ease 0.8s;
 }
 
-.layers-active {
-    display: block;
-}
 
-.layers-right,
-.layers-left {
-    display: block;
-    transform: scale(0.80);
-    filter: blur(3px);
-}
+
 
 .layers__items-image {
     width: 280px;
@@ -447,19 +461,64 @@ body {
     border-radius: 10px;
 }
 
-.sectionFour {}
+.sectionFour {
+    width: 100%;
+    height: 700px;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.sectionFour-Advantage {}
+.sectionFour-Advantage {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
-.sectionFour-Advantage__items {}
+.sectionFour-Advantage__items {
+    width: 28%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8px;
+}
 
-.Advantage__items-icons {}
+.Advantage__items-rigth,
+.Advantage__items-left {
+    box-shadow: 2px 2px 8px #ffc11060, -2px -2px 8px #ffc11060;
+}
 
-.Advantage__items-text {}
+.Advantage__items-middel {
+    box-shadow: 2px 2px 8px #7952b360, -2px -2px 8px #7952b360;
+    transform: scale(1.1);
+}
 
-.Advantage__items-text_header {}
+.Advantage__items-icons {
+    width: 80%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.Advantage__items-text_caption {}
+.Advantage__items-icons img {
+    width: 100%;
+}
+
+.Advantage__items-text_header {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Advantage__items-text_caption {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-size: 18px;
+}
 
 .Footer {}
 

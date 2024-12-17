@@ -21,9 +21,9 @@ themeBTN.addEventListener("click", function () {
 // highlightLayer
 
 const layers = {
-    right: document.querySelector('.layers-right'),
-    active: document.querySelector('.layers-active'),
-    left: document.querySelector('.layers-left')
+    right: $.querySelector('.layers-right'),
+    active: $.querySelector('.layers-active'),
+    left: $.querySelector('.layers-left')
 };
 
 const resetStyles = () => {
@@ -45,6 +45,20 @@ layers.left.addEventListener('mouseenter', () => highlightLayer(layers.left));
 
 
 // highlightLayer End !
+
+// menu
+const showMenuElem = $.querySelector(".show-menu")
+const Menu = $.querySelector(".Navbar-Container")
+showMenuElem.addEventListener("click", function () {
+    if (showMenuElem.classList == "show-menu none") {
+        showMenuElem.classList = 'show-menu activ'
+        Menu.style.right = "0px"
+    } else {
+        showMenuElem.classList = 'show-menu none'
+        Menu.style.right = "-300px"
+    }
+})
+// menu End !
 
 //Loader Website!
 // const LoaderElem = document.querySelector(".Loader")

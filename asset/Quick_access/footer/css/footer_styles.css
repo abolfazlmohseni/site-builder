@@ -1,0 +1,149 @@
+/* footer */
+.Footer {
+    width: 100%;
+    height: 450px;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #e1e8eb;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 2px 2px 8px #00000045, -2px 2px 8px #00000025;
+}
+
+.Footer-left__box {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 80%;
+}
+
+
+.communication-text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.communication-shabake {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 17px;
+}
+
+.communication-shabake div {
+    display: flex;
+    align-items: center;
+}
+
+.bi {
+    font-size: 18px;
+    color: #fff;
+}
+
+.communication-shabake div p {
+    margin-right: 5px;
+}
+
+.Footer-middle__box {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.middle__box-header {
+    width: 30%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.middle__box-header div p {
+    margin-bottom: 5px;
+}
+
+.bottomBorderFooter {
+    width: 55%;
+    height: 5px;
+    background-color: #7952b3;
+    border-radius: 8px;
+}
+
+.middle__box-capshon {
+    width: 65%;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.Footer-right__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 80%;
+    /* justify-content: space-around; */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.list-conteyner {
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.list-conteyner li {
+    margin-bottom: 5px;
+}
+
+.list-header {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.list-header p {
+    margin: 5;
+}
+
+/* footer End ! */
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+    .Footer {
+        flex-wrap: wrap;
+        height: 570px;
+    }
+
+    .Footer-right__box {
+        width: 40%;
+        height: 50%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .Footer-middle__box {
+        width: 50%;
+        height: 50%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .Footer-left__box {
+        margin-left: auto;
+        margin-right: auto;
+        width: 72%;
+        height: 50%;
+    }
+
+    .communication-shabake {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .communication-shabake div {
+        margin: 5px;
+    }
+}
+
+/* responsive End ! */

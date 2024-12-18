@@ -1,0 +1,185 @@
+/* navbar*/
+
+.menu-res {
+    width: 100%;
+    height: 75px;
+    background-color: #e1e8eb;
+    border-radius: 8px;
+    box-shadow: 1px 1px 12px #00000020, -1px -1px 12px #00000020;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.R-side {
+    margin-right: 30px;
+}
+
+.L-side {
+    margin-left: 30px;
+}
+
+.Navbar-Container {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e1e8eb;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 12px #00000020, -1px -1px 12px #00000020;
+}
+
+
+.Rightside {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Berand {
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.Navbar-Items__Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 65%;
+}
+
+
+
+.Navbar-Items__text {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.theme {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 1px 1px 4px #00000020, -1px -1px 4px #00000020;
+
+}
+
+.Active {
+    display: block !important;
+    height: 36px;
+}
+
+.dark,
+.Light {
+    display: none;
+    color: #fff;
+}
+
+.LoginSinup {
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #7952b3;
+    color: #000;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+
+
+/* navbar End ! */
+
+/* responsive */
+
+@media only screen and (max-width: 1200px) {
+    .Container {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Navbar-Items__Container {
+        width: 80%;
+        margin-right: 30px;
+    }
+
+    .Navbar-Items__text {
+        font-size: 16px;
+    }
+
+    .LoginSinup {
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .Container {
+        width: 820px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Navbar-Container {
+        flex-direction: column;
+        width: 300px;
+        height: 100vh;
+        margin-top: 0;
+        position: absolute;
+        top: 0;
+        right: -300px;
+        transition: all ease 0.4s;
+    }
+
+    .menu-res {
+        display: flex;
+    }
+
+    .Rightside {
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .Navbar-Items__Container {
+        flex-direction: column;
+        height: 80%;
+        width: 100%;
+        align-items: flex-start;
+        margin-right: 0;
+    }
+
+    .LoginSinup {
+        margin-bottom: 2.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .Container {
+        width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .Container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* responsive End ! */

@@ -122,6 +122,7 @@ body {
 }
 
 .capshon-box.active {
-    max-height: 100px; /* ارتفاع مناسب برای محتوای داخل */
+    max-height: 100px;
+    /* ارتفاع مناسب برای محتوای داخل */
     opacity: 1;
 }
